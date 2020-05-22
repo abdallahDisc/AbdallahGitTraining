@@ -1,0 +1,8 @@
+---
+applications:
+  - name: abdallah-gradle-we-in-dis
+    memory: 1gb
+    instances: 1
+    buildpacks:
+      - java_buildpack_OracleJRE_8u144_no-appd_v46
+    path: build/libs/AbdallahGradleApp.war
