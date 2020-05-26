@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html sv_role="main" class="" lang="en" data-whatinput="mouse" data-whatintent="mouse"><head><style type="text/css" id="__safly_default_style">
-    object {display: inline-block;}
+    object {display: flex;}
     .__safly_input_chrome::-webkit-search-cancel-button {display: none;}
     .__safly_input_ms::-ms-clear {display: none;}
 </style>
@@ -54,7 +54,7 @@
     .fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}</style><link type="image/x-icon" rel="shortcut icon" id="__sv_favicon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADSUlEQVQ4jVWTzW9UZRjFz/N+3TvTmXEGaBlaYzCU1qToolEQyggaNLJpJKiNwRUx6QJdN/4DLkyNJiSG8BF3GkjcCjHoAmrSlFq00IXBtInNlEpnOi0zczv33vd9HxcVg2d3Fr+zOecQtkUAGAAGhkcqJgzHtVaVtbX67iRqUmrdQ6nNbZMtXFhZmP7laUb+azAyejafKZUm1xvNr57tKQ4P9JaemX+wrHSYkXHUKqZx5yVvkw/CQqncedy4DSB5kkIjo6O56nL96tZW5+Rarc5l3fF9WU93apKkFOA0QaFY8hBSaBOQs8mN9aXVMWC9KQEgky9PNtvRmU5rMzk0PCSOH35F9u8foOKu3XhxcB96yz1Y+mtZCBJMUqVC6cFMMZvfaqz9IPsPHjncfBydTxJLkp2UNqFDldew94Uh3LxxnQYH99OVixdoZ7HAP978WUiliBkezMMw5iflEjpnnQ+87TghQAu/36f6WzUUclnM353j+btzdGDoAFdOnEDpy/O80YrIBAE7741UwTnlva8QEYNB7DxIazZSUr1Wgwyy5OIId2ZnqbHRQKNegwqz8M4SQKxNWBHeu3KadMg7S2wtMRHl8jl0OjFcnLAOuxAGhq9d+56tYxAEg4ikDkgrXRbOWWZnQVKApGIwczuKuCsbwoQBJr/4HCYIcH/+HrTWgNguj0jAOkvCpnbVZLpYmQwLJQFmSuKYvLNsk4TuLcyicuxlOv3uKYqiNnsQlFRMQjLAKyoMw6nE+TPWOg9mgpSslQYgSIYhX770LT18VOP3T71He/r20JVvvuMoYM4VMiKNk1syyHevgvhD77wgIZCkCY2dfgdaS0zPzIFFQH8+WKalxUV+4/gxHD1ykKvVKhqbm5Y9fyzbjdVlk9vRo4PwVaVUGseJ6N/bJ1yaYPrXeUijYTIZVFf+xtT0DBdyWXvyzdd1e6Px9R+/zVyi7TnvyHfv67sqtHl7K4o4o9nlAiOrj+owYQh2HsoEHkKJTtSinV3B9U/Gz45NTEy0CP9pV770fM9nguRHHgjjqAViBzDANoXJFRCE2Y5Nk8v1pYVPAbSenOl/d853P3eUjBoXJCrO2162HuzSFRBuCZO52FxZnHqa+QdbZpR3vwVU7AAAAABJRU5ErkJggg=="></head>
 <body class=" p-login" id="p-login"><div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div>
 <main class="l-vista l-vista--size-narrow" data-value="">
-    <div class="l-vista__central">
+    <div class="l-vista__central" style={display:flex}>
         <div class="l-vista__container" style={width:20px}>
             <a href="index.html">Home</a> |
             <a href="report">Report</a> |
@@ -63,16 +63,28 @@
             <a href="embedresponse.jsp">Embed</a> |
             <a href="textresponse.jsp">Text</a>
         </div>
-        <div class="l-vista__container " id="l-vista__container">
+        <div class="l-vista__container " >
             <div class="l-vista__logo">
                 <img src="https://us-east-1-02690023-view.menlosecurity.com/c/i/aHR0cHM6Ly93d3cucnVuZXNjYXBlLmNvbS9pbWcvcmVzcG9uc2l2ZS9jb21tb24vbG9nb3Mvb2xkc2Nob29sLnBuZw~~" data-interchange="[https://www.runescape.com/img/responsive/common/logos/oldschool.png, small], [https://www.runescape.com/img/responsive/common/logos/oldschool@2x.png, retina]" alt="Old School RuneScape Logo" title="Old School RuneScape" data-test="product-logo-img-os" data-resize="1kldqw-interchange" id="1kldqw-interchange" data-e="5bq5p9-e" data-events="resize">
                 <img src="https://us-east-1-02690023-view.menlosecurity.com/c/i/aHR0cHM6Ly93d3cucnVuZXNjYXBlLmNvbS9pbWcvcmVzcG9uc2l2ZS9jb21tb24vbG9nb3MvcnVuZXNjYXBlLnBuZw~~" data-interchange="[https://www.runescape.com/img/responsive/common/logos/runescape.png, small], [https://www.runescape.com/img/responsive/common/logos/runescape@2x.png, retina]" alt=" RuneScape Logo" title=" RuneScape" data-test="product-logo-img-rs" data-resize="6792c3-interchange" id="6792c3-interchange" data-e="0x72xq-e" data-events="resize">
             </div>
+            <style>
 
-            <span>x-value: ${xval}</span><br/>
-            <span>y-value: ${yval}</span><br/>
-            <span>z-value: ${zval}</span><br/>
-            <span>volume: ${volume}</span>
+            </style>
+            <table border="1">
+                  <tr>
+                    <td><b>Student ID</b></td>
+                    <td><b>First name</b></td>
+                    <td><b>Last name</b></td>
+                    <td><b>GPA</b></td>
+                  </tr>
+                  <tr>
+                    <td>${student.getStudentID()}</td>
+                    <td>${student.getFirstName()}</td>
+                    <td>${student.getLastName()}</td>
+                    <td>${student.getGpa()}</td>
+                  </tr>
+            </table>
         </div>
     </div>
 </main>

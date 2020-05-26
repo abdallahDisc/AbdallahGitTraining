@@ -55,27 +55,21 @@
 <body class=" p-login" id="p-login"><div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div>
 <main class="l-vista l-vista--size-narrow" data-value="">
     <div class="l-vista__central">
+        <div class="l-vista__container" style={width:20px}>
+            <a href="index.html">Home</a> |
+            <a href="report">Report</a> |
+            <a href="todo">Todo</a><br/>
+            <a href="imageresponse.jspg">Image</a> |
+            <a href="embedresponse.jsp">Embed</a> |
+            <a href="textresponse.jsp">Text</a>
+        </div>
         <div class="l-vista__container " id="l-vista__container">
+
             <div class="l-vista__logo">
                 <img src="https://us-east-1-02690023-view.menlosecurity.com/c/i/aHR0cHM6Ly93d3cucnVuZXNjYXBlLmNvbS9pbWcvcmVzcG9uc2l2ZS9jb21tb24vbG9nb3Mvb2xkc2Nob29sLnBuZw~~" data-interchange="[https://www.runescape.com/img/responsive/common/logos/oldschool.png, small], [https://www.runescape.com/img/responsive/common/logos/oldschool@2x.png, retina]" alt="Old School RuneScape Logo" title="Old School RuneScape" data-test="product-logo-img-os" data-resize="1kldqw-interchange" id="1kldqw-interchange" data-e="5bq5p9-e" data-events="resize">
                 <img src="https://us-east-1-02690023-view.menlosecurity.com/c/i/aHR0cHM6Ly93d3cucnVuZXNjYXBlLmNvbS9pbWcvcmVzcG9uc2l2ZS9jb21tb24vbG9nb3MvcnVuZXNjYXBlLnBuZw~~" data-interchange="[https://www.runescape.com/img/responsive/common/logos/runescape.png, small], [https://www.runescape.com/img/responsive/common/logos/runescape@2x.png, retina]" alt=" RuneScape Logo" title=" RuneScape" data-test="product-logo-img-rs" data-resize="6792c3-interchange" id="6792c3-interchange" data-e="0x72xq-e" data-events="resize">
             </div>
-
-            <!--            <a href="https://secure.runescape.com/m=weblogin/cant_log_in" target="_parent" id="login-cannot" data-test="cant-log-in">Can't Log In?</a>-->
-            <!--            <div class="login-social">-->
-
-            <!--                <div class="login-social__column">-->
-            <!--                    <a href="https://secure.runescape.com/m=weblogin/loginform.ws?mod=www&amp;ssl=1&amp;expired=0&amp;dest=account_settings#" id="facebooklogin" class="a-social-button a-social-button&#45;&#45;service-facebook" target="_parent" data-test="facebook-login">Log In</a>-->
-            <!--                </div>-->
-            <!--                <div class="login-social__column">-->
-            <!--                    <a href="https://auth.jagex.com/google/v1/social/login/en?correlationId=https:www:account_settings" id="googlelogin" class="a-social-button a-social-button&#45;&#45;service-google" target="_parent" data-test="google-login">Log In</a>-->
-            <!--                </div>-->
-
-            <!--            </div>-->
             <span>Hello, ${user}!</span>
-            <!--            <span>Not registered?</span>-->
-            <!--            <br>-->
-            <!--            <a href="https://secure.runescape.com/m=account-creation/create_account" target="_parent" id="login-create" data-test="create-an-account">Create an account</a>-->
         </div>
     </div>
 </main>

@@ -4,6 +4,97 @@
     .__safly_input_chrome::-webkit-search-cancel-button {display: none;}
     .__safly_input_ms::-ms-clear {display: none;}
 </style>
+    <style>
+        .img1 {
+            border-radius: 50%;
+        }
+        .img2 {
+            border-radius: 5px;
+        }
+        .img2:hover {
+            transition: .5s ease;
+            opacity: 0.20;
+            z-index: 1;
+        }
+        #myImg {
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        #myImg:hover {opacity: 0.7;}
+
+        /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+        }
+
+        /* Modal Content (Image) */
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 300px;
+        }
+
+        /* Caption of Modal Image (Image Text) - Same Width as the Image */
+        #caption {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 300px;
+            text-align: center;
+            color: #ccc;
+            padding: 10px 0;
+            height: 150px;
+        }
+
+        /* Add Animation - Zoom in the Modal */
+        .modal-content, #caption {
+            animation-name: zoom;
+            animation-duration: 0.6s;
+        }
+
+        @keyframes zoom {
+            from {transform:scale(0)}
+            to {transform:scale(1)}
+        }
+
+        /* The Close Button */
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* 100% Image Width on Smaller Screens */
+        @media only screen and (max-width: 700px){
+            .modal-content {
+                width: 100%;
+            }
+        }
+    </style>
     <meta charset="UTF-8">
     <title>Log In - RuneScape | Old School RuneScape</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -54,6 +145,7 @@
     .fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}</style><link type="image/x-icon" rel="shortcut icon" id="__sv_favicon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADSUlEQVQ4jVWTzW9UZRjFz/N+3TvTmXEGaBlaYzCU1qToolEQyggaNLJpJKiNwRUx6QJdN/4DLkyNJiSG8BF3GkjcCjHoAmrSlFq00IXBtInNlEpnOi0zczv33vd9HxcVg2d3Fr+zOecQtkUAGAAGhkcqJgzHtVaVtbX67iRqUmrdQ6nNbZMtXFhZmP7laUb+azAyejafKZUm1xvNr57tKQ4P9JaemX+wrHSYkXHUKqZx5yVvkw/CQqncedy4DSB5kkIjo6O56nL96tZW5+Rarc5l3fF9WU93apKkFOA0QaFY8hBSaBOQs8mN9aXVMWC9KQEgky9PNtvRmU5rMzk0PCSOH35F9u8foOKu3XhxcB96yz1Y+mtZCBJMUqVC6cFMMZvfaqz9IPsPHjncfBydTxJLkp2UNqFDldew94Uh3LxxnQYH99OVixdoZ7HAP978WUiliBkezMMw5iflEjpnnQ+87TghQAu/36f6WzUUclnM353j+btzdGDoAFdOnEDpy/O80YrIBAE7741UwTnlva8QEYNB7DxIazZSUr1Wgwyy5OIId2ZnqbHRQKNegwqz8M4SQKxNWBHeu3KadMg7S2wtMRHl8jl0OjFcnLAOuxAGhq9d+56tYxAEg4ikDkgrXRbOWWZnQVKApGIwczuKuCsbwoQBJr/4HCYIcH/+HrTWgNguj0jAOkvCpnbVZLpYmQwLJQFmSuKYvLNsk4TuLcyicuxlOv3uKYqiNnsQlFRMQjLAKyoMw6nE+TPWOg9mgpSslQYgSIYhX770LT18VOP3T71He/r20JVvvuMoYM4VMiKNk1syyHevgvhD77wgIZCkCY2dfgdaS0zPzIFFQH8+WKalxUV+4/gxHD1ykKvVKhqbm5Y9fyzbjdVlk9vRo4PwVaVUGseJ6N/bJ1yaYPrXeUijYTIZVFf+xtT0DBdyWXvyzdd1e6Px9R+/zVyi7TnvyHfv67sqtHl7K4o4o9nlAiOrj+owYQh2HsoEHkKJTtSinV3B9U/Gz45NTEy0CP9pV770fM9nguRHHgjjqAViBzDANoXJFRCE2Y5Nk8v1pYVPAbSenOl/d853P3eUjBoXJCrO2162HuzSFRBuCZO52FxZnHqa+QdbZpR3vwVU7AAAAABJRU5ErkJggg=="></head>
 <body class=" p-login" id="p-login"><div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div>
 <main class="l-vista l-vista--size-narrow" data-value="">
+
     <div class="l-vista__central">
         <div class="l-vista__container" style={width:20px}>
             <a href="index.html">Home</a> |
@@ -69,12 +161,57 @@
                 <img src="https://us-east-1-02690023-view.menlosecurity.com/c/i/aHR0cHM6Ly93d3cucnVuZXNjYXBlLmNvbS9pbWcvcmVzcG9uc2l2ZS9jb21tb24vbG9nb3MvcnVuZXNjYXBlLnBuZw~~" data-interchange="[https://www.runescape.com/img/responsive/common/logos/runescape.png, small], [https://www.runescape.com/img/responsive/common/logos/runescape@2x.png, retina]" alt=" RuneScape Logo" title=" RuneScape" data-test="product-logo-img-rs" data-resize="6792c3-interchange" id="6792c3-interchange" data-e="0x72xq-e" data-events="resize">
             </div>
 
-            <span>x-value: ${xval}</span><br/>
-            <span>y-value: ${yval}</span><br/>
-            <span>z-value: ${zval}</span><br/>
-            <span>volume: ${volume}</span>
+            <div>
+
+                <img class="img1" src="rsorchestral.jpg">
+            </div>
+            <br/>
+            <div>
+                <img class="img2" src="buyinggf.jfif" width="100%" height="100%">
+            </div>
+            <br/>
+            <div>
+                <img id="myImg" src="rs.jpg" alt="Snow" style="width:100%;">
+
+            </div>
         </div>
+
     </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+          <!-- The Close Button -->
+          <span class="close">&times;</span>
+
+          <!-- Modal Content (The Image) -->
+        <br/><br/><br/><br/>
+          <img class="modal-content" id="img01">
+
+          <!-- Modal Caption (Image Text) -->
+          <div id="caption"></div>
+    </div>
+    <script>
+        var modal = document.getElementById("myModal");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("myImg");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+    </script>
 </main>
 
 
