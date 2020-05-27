@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html sv_role="main" class="" lang="en" data-whatinput="mouse" data-whatintent="mouse"><head><style type="text/css" id="__safly_default_style">
     object {display: flex;}
     .__safly_input_chrome::-webkit-search-cancel-button {display: none;}
@@ -78,12 +79,14 @@
                     <td><b>Last name</b></td>
                     <td><b>GPA</b></td>
                   </tr>
+                <c:forEach items="${students}" var="student">
                   <tr>
                     <td>${student.getStudentID()}</td>
                     <td>${student.getFirstName()}</td>
                     <td>${student.getLastName()}</td>
                     <td>${student.getGpa()}</td>
                   </tr>
+                </c:forEach>
             </table>
         </div>
     </div>

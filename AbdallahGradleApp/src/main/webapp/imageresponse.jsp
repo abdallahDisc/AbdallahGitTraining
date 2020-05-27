@@ -171,7 +171,7 @@
             </div>
             <br/>
             <div>
-                <img id="myImg" src="rs.jpg" alt="Snow" style="width:100%;">
+                <img id="myImg" src="rs.jpg"  style="width:100%;">
 
             </div>
         </div>
